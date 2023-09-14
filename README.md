@@ -7,4 +7,4 @@ O projeto tem como objetivo disponibilizar as informações sobre os assaltos em
 ![Escopo inicial da Home Page do site](/Imagens/login.png)
 ![Escopo inicial da Home Page do site](/Imagens/zonas.png)
 ![Escopo inicial da Home Page do site](/Imagens/Reportar.png)
-
+![Escopo da modelagem do banco de dados](/brModelo/zonaSafe.jpg)
