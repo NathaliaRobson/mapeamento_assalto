@@ -1,0 +1,155 @@
+body{
+    background-color: rgb(255, 255, 255); /*cor de fundo*/
+    
+}
+
+header{ /*cabeçalho da pagina*/
+    background-color: #ffff00;
+    display: flex;/*posicao do cabeçalho*/
+    flex-direction: row; /*vai deixa como uma linha*/
+    justify-content: space-between; /*vai separ as "div"*/
+    align-items: center;
+    
+
+}
+
+.safe{
+    width: 130px;
+    height: 90px;
+}
+
+
+.mnuPrincipal ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.mnuPrincipal ul{ /*menu*/
+    background-color: #ffff00;
+    padding: 20px;
+    padding-right: 40px;
+    text-align: right;
+      
+    
+}
+
+.mnuPrincipal ul li{
+    display: inline-block;
+    
+}
+
+.mnuPrincipal ul li a{
+    color: black;    
+    text-decoration: none;
+    padding: 18px;
+    font-size: 16px;
+    position: relative;
+}
+
+
+.mnuPrincipal ul li a:hover {
+    color: black; /*fonte para muda de cor*/
+    border-radius: 18px;
+    border: 2px solid rgb(0, 84, 231);
+    /*transition: 0.3s all;*/
+   /* background-color: blue;*/
+    
+  }
+
+
+  
+  #inscreva-se-btn{ /*botao incriva-se*/
+    color: white;
+    padding: 18px;
+    background-color: black;
+    border-radius: 18px;
+
+    
+}
+#inscreva-se-btn:hover{
+    color: white;
+    background-color: rgb(0, 84, 231);
+    /*border: 2px solid rgb(0, 84, 231);*/
+}
+
+
+main{ /*vai deixa o texto e a imagem uma do lado da outra*/
+    display: flex;
+    flex-direction: row;
+    margin-top: 300px; /*margem de cima*/
+    padding: 10px;
+    
+}
+
+
+h2{
+    color: #fff;
+    font-size: 60px;
+    line-height: 50px;
+    font-family: poppinsmedium;
+}
+
+span{
+    color: rgb(0,84,231); /*cor do increva-se*/
+    margin-right: 250px;
+    
+}
+
+
+
+p{
+    color: black;
+    line-height: 15px;
+    max-width: 550px;
+    font-family: poppinslight;
+}
+
+img{
+    width: 900px;
+    margin-left: 100px; /*espaçamento do texto da imagem*/
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+        
+}
+
+.safeZ{
+    width: 85%;
+    padding-top: 100px;
+}
+#caixa{
+    height: 30px;
+    width: 50%;
+    border: 2px solid black;
+}
+#enviar{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(0, 84, 231);
+    color: white;
+    font-weight: bold;
+}
+
+#enviar:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
