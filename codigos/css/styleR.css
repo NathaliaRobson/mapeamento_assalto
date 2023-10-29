@@ -1,0 +1,82 @@
+*{
+    font-family: Helvetica;
+    box-sizing: border-box;
+
+}
+
+body{
+    /* padding: 1rem; */
+    background-color: rgb(34, 34, 34);
+    /* background-image: url(../components/imagens/planoDeFundo.jpeg); */
+    
+}
+
+.container{
+     background: #ffff00;
+     text-align: center;
+     padding: 20px;
+     border-radius: 10px;
+     padding-bottom: 6%;
+    
+}
+
+
+
+div{
+    
+    margin-top: 10px; 
+   
+    padding: 5px;
+    align-items: center;
+    
+   
+}
+
+img{
+    margin-left: 25px;
+    width: 250px;
+    
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    line-height: 25px;
+    margin: 20px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column; /*vai deixa em coluna o formulario*/
+    gap: .5rem;
+    width: 500px;
+    margin: 0 auto; /*vai deixa a altura automatica*/
+
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px; /*vai dar uma afastada do input*/
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+
+}
+
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    
+}

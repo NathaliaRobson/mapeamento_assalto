@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="css/styleCL.css">
+         
+    <title>Login & Registro de formulario</title> 
+</head>
+<body>
+    
+    <div class="container">
+
+        <nav class="logo">
+            <img class="safe" src="./imagens/safezone2.png">
+         </nav>
+
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Email" id="loginlogin" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Senha" id="senha" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Lembra de mi</label>
+                        </div>
+                        
+                        <a href="#" class="text">Esqueceu sua senha ?</a>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login" onclick="logar(); return false">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text"> Não tem uma conta?
+                        <a href="#" class="text signup-link">Inscreva-se agora</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Formulário de registro-->
+            <div class="form signup">
+                <span class="title">Registro</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Nome" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Email" required>
+                        <i class="uil uil-envelope icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Senha" required>
+                        <i class="uil uil-lock icon"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Confirma senha" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">Aceitei todos os termos e condições</label>
+                        </div>
+                    </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Inscrever-se">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Já é um membro?
+                        <a href="#" class="text login-link">Login agora</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+     <script src="js/scriptCL.js"></script> 
+</body>
+</html>

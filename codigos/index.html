@@ -13,7 +13,7 @@
     <!--Caberçalho-->
     <header>
         <nav class="logo">
-            <img class="safe" src="./components/imagens/safezone2.png">
+           <img class="safe" src="imagens/safezone2.png"> 
         </nav>
         
         <nav class="mnuPrincipal">
@@ -23,28 +23,47 @@
                 <li><a href="#">Sobre</a></li>
                 <li><a href="#">Contato</a></li>
 
-                <li><a href="login.html" id="inscreva-se-btn">Já tem uma conta?</a></li>
+                <li><a href="LoginCadastro.html" id="inscreva-se-btn">Já tem uma conta?</a></li>
             </ul>
             
         </nav>
     </header>
         <main>
             <aside>
-                <h2><span>Safe Zone</span></h2>
+                <h2><span>Inscreva-se agora</span></h2>
+
+               <!-- <img class="safe" src="./components/imagens/safezone2.png"> -->
                 <h2> Safe Zona</h2>
     
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> -->
+    
                 <form>
-                    <input type="submit" id="enviar" onclick="logar(); return false" value="Ver Zonas">
-                    <input type="submit" id="enviar" onclick="logar(); return false" value="Reportar ">
+                    <!-- <input type="text"  id="caixa"placeholder="Nome"> <--"nome" detro da caixa de texto-->
+                    <!-- <input type="email" id="caixa" placeholder="E-mail"> <--"Email" detro da caixa de texto-->
+                    <!--<input type="submit" id="enviar" onclick="logar(); return false" value="Enviar >"> "Email" detro da caixa de texto  -->
+
+                    <!-- <input type="submit" id="enviar" onclick="logar(); return false" value="Ver Zonas">
+                    <input type="submit" id="enviar" onclick="logar(); return false" value="Reportar "> -->
+    
+
+                    <button type="submit" id="enviar">
+                        <a href="">Ver Zonas</a>
+                    </button>
+                    <button type="submit" id="enviar">
+                        <a href="reportar.html">Repostar</a>
+                        </button>
+
+                    
                 </form>
-              
             </aside>
+    
             <article> <!--imagem do lado direito-->
-                <img class="safeZ" src="./components/imagens/safezone2.png" alt="safeZone">
+                <!--<img class="safeZ" src="./components/imagens/safezone2.png" alt="safeZone"> -->
+               <!-- <img class="safeZ" src="./components/imagens/mapa.png" alt="safeZone"> -->
+                <!--<img class="safeZ" src="./components/imagens/mapaP.png" alt="safeZone">-->
+                <img class="safeZ" src="imagens/mapaP2.png" alt="safeZone">
             </article>
         </main>
-    
-       
-       <!-- <script src="js/script.js"></script> -->
+        <script src="js/script.js"></script>  
     </body>
     </html>
