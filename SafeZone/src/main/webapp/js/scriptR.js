@@ -1,36 +1,36 @@
 var countryLists = new Array(7)
 
  countryLists["zona0"] = ["Selecione um Bairro"];
- countryLists["Cental"] = ["Barra Funda","Bom Retiro","Brás","Liberdade","Santa Cecília","Sé","República","Consolação"];
- countryLists["Norte"] = ["Jaçanã","Vila Guilherme","Tremembé","Tucuruvi","Vila Maria"];
- countryLists["Sul"] = ["Itaim Bibi", "Ipiranga", "Morumbi", "Moema", "Vila Mariana", "Capão Redondo", "Grajaú"];
- countryLists["Leste"] = ["Itaquera", "Mooca", "Iguatemi", "Penha", "Sapopemba", "Tatuapé", "Vila Formosa", "Lajeado", "Cangaíba"];
- countryLists["Oeste"] = ["Jaraguá", "Vila Leopoldina", "São Domingos", "Anhanguera", "Brasilândia", "Perdizes"," Pinheiros"];
+ countryLists["Cental"] = ["Barra Funda","Bom Retiro","Bras","Liberdade","Santa Cecília","Se","Republica","Consolacao"];
+ countryLists["Norte"] = ["Jacana","Vila Guilherme","Tremembe","Tucuruvi","Vila Maria"];
+ countryLists["Sul"] = ["Itaim Bibi", "Ipiranga", "Morumbi", "Moema", "Vila Mariana", "Capao Redondo", "Grajau"];
+ countryLists["Leste"] = ["Itaquera", "Mooca", "Iguatemi", "Penha", "Sapopemba", "Tatuape", "Vila Formosa", "Lajeado", "Cangaiba"];
+ countryLists["Oeste"] = ["Jaragua", "Vila Leopoldina", "Sao Domingos", "Anhanguera", "Brasilandia", "Perdizes"," Pinheiros"];
 
  function comboDinamica(selectObj) {
- // get the index of the selected option
+ // obter o índice da opção selecionada
  var idx = selectObj.selectedIndex;
- // get the value of the selected option
+ // obter o valor da opção selecionada
  var which = selectObj.options[idx].value;
- // use the selected option value to retrieve the list of items from the countryLists array
+ // use o valor da opção selecionada para recuperar a lista de itens da matriz countryLists
  cList = countryLists[which];
- // get the country select element via its known id
- var cSelect = document.getElementById("atributo1");
- // remove the current options from the country select
+ // obtenha o elemento de seleção do país por meio de seu ID conhecido
+ var cSelect = document.getElementById("rep-bairro");
+ // remova as opções atuais da seleção do país
  var len=cSelect.options.length;
 
  while (cSelect.options.length > 0) {
  cSelect.remove(0);
  }
  var newOption;
- // create new options
+ // criar novas opções
  for (var i=0; i<cList.length; i++) {
  newOption = document.createElement("option");
- newOption.value = cList[i];  // assumes option string and value are the same
+ newOption.value = cList[i];  // assume que a string de opção e o valor são iguais
  newOption.text=cList[i];
  // add the new option
  try {
- cSelect.add(newOption);  // this will fail in DOM browsers but is needed for IE
+ cSelect.add(newOption);  // isso falhará nos navegadores DOM, mas é necessário para o IE
  }
  catch (e) {
  cSelect.appendChild(newOption);
@@ -39,17 +39,17 @@ var countryLists = new Array(7)
  }
 
  /*Validação*/
- const form = document.querySelector("#formulario1");
-const nameInput = document.querySelector("#name");
-const emailInput = document.querySelector("#email");
+const form = document.querySelector("#formulario1");
+const nameInput = document.querySelector("#rep-name");
+const emailInput = document.querySelector("#rep-email");
 
-const dataCrime = document.querySelector("#iddate");
+//const dataCrime = document.querySelector("#iddate");
 
-const zonaSelect = document.querySelector("#zona1");
-const bairroSelect = document.querySelector("#atributo1");
-const anonimoSelect = document.querySelector("#anonimo");
+const zonaSelect = document.querySelector("#rep-zona");
+const bairroSelect = document.querySelector("#rep-bairro");
+const anonimoSelect = document.querySelector("#rep-anonimo");
 
-const mensageTextarea = document.querySelector("#mensagem"); /*chama as ID do HTML*/
+const mensageTextarea = document.querySelector("#rep-mensagem"); /*chama as ID do HTML*/
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();

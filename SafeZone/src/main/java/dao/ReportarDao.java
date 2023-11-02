@@ -1,5 +1,6 @@
 package dao;
 
+import config.ConnectionPoolConfig;
 import model.Reportar;
 
 import java.sql.Connection;
@@ -12,13 +13,12 @@ import java.util.List;
 
 public class ReportarDao {
     public void createReportar(Reportar reportar){
-        String SQL = "INSERT INTO REPORTAR (nome, email, zona, bairro, anonimo, mensagem) VALUES(?,?,?,?,?,?)";
+        String SQL = "INSERT INTO REPORTAR (NAME, EMAIL, ZONA, BAIRRO, ANONIMO, MENSAGEM) VALUES(?,?,?,?,?,?)";
 
         try {
-
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
-
-            System.out.println("success in database connection");
+            Connection connection = ConnectionPoolConfig.getConnection();
+            //Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa","sa");
+            //System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -46,10 +46,9 @@ public class ReportarDao {
         String SQL = "SELECT * FROM REPORTAR";
 
         try {
-
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
-
-            System.out.println("success in database connection");
+            Connection connection = ConnectionPoolConfig.getConnection();
+            //Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            //System.out.println("success in database connection");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -92,7 +91,8 @@ public class ReportarDao {
         String SQL = "UPDATE REPORTAR SET NAME = ?, EMAIL = ?, ZONA = ?, BAIRRO = ?, ANONIMO = ?, MENSAGEM = ? WHERE ID = ?";
 
         try{
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            Connection connection = ConnectionPoolConfig.getConnection();
+            //Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
 
@@ -123,8 +123,8 @@ public class ReportarDao {
         String SQL = "DELETE REPORTAR WHERE ID = ?";
 
         try {
-
-            Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
+            Connection connection = ConnectionPoolConfig.getConnection();
+            //Connection connection = DriverManager.getConnection("jdbc:h2:~/test", "sa", "sa");
 
             PreparedStatement preparedStatement = connection.prepareStatement(SQL);
             preparedStatement.setString(1, repId);

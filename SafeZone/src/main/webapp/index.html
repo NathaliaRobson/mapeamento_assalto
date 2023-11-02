@@ -2,67 +2,65 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styleR.css">
-    <title>Reportar</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+
+    <title>MapaDeAssalto</title>
 </head>
-<main>
-
-    <div class="container">
-
+<body>
+    <!--Caberçalho-->
+    <header>
         <nav class="logo">
-            <img class="safe" src="/img/safezone2.png">
+           <img class="safe" src="img/safezone2.png">
         </nav>
+        
+        <nav class="mnuPrincipal">
+            <ul> 
+                
+                <li><a href="#">Delegacias</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
 
-        <h1>Reportar</h1>
-        <form id="formulario1" action="/create-reportar" method="post">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="rep-name">
+                <li><a href="LoginCadastro.html" id="inscreva-se-btn">Já tem uma conta?</a></li>
+            </ul>
+            
+        </nav>
+    </header>
+        <main>
+            <aside>
+                <h2><span>Inscreva-se agora</span></h2>
 
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email">
+               <!-- <img class="safe" src="./components/imagens/safezone2.png"> -->
+                <h2> Safe Zona</h2>
+    
+                <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p> -->
+    
+                <form>
+                    <!-- <input type="text"  id="caixa"placeholder="Nome"> <--"nome" detro da caixa de texto-->
+                    <!-- <input type="email" id="caixa" placeholder="E-mail"> <--"Email" detro da caixa de texto-->
+                    <!--<input type="submit" id="enviar" onclick="logar(); return false" value="Enviar >"> "Email" detro da caixa de texto  -->
 
-            <!-- <label for="iddate">Data do Crime:</label>
-            <input type="text" id="iddate" name="iddate"> -->
+                    <!-- <input type="submit" id="enviar" onclick="logar(); return false" value="Ver Zonas">
+                    <input type="submit" id="enviar" onclick="logar(); return false" value="Reportar "> -->
 
-            <!--caixa de opção de bairro-->
-            <label for="zona1">Zona de Sao Paulo</label>
-            <select name="zona1" id="zona1" onchange="comboDinamica(this);">
+                        <a href=""id="enviar2">Ver Zonas</a>
 
-                <option value="zona0">Selecione um Zona</option>
-                <option value="Cental">Cental</option>
-                <option value="Norte">Norte</option>
-                <option value="Sul">Sul</option>
-                <option value="Leste">Leste</option>
-                <option value="Oeste">Oeste</option>
-
-            </select>
-
-            <label for="atributo1">Bairro de São Paulo:</label>
-            <select name="atributo1" id="atributo1">
-                <option value="0">Selecione um Bairro</option>
-            </select>
-
-            <label for="anonimo">Anônimo:</label>
-            <select name="anonimo" id="anonimo">
-                <option value="a">Opções?</option>
-                <option value="yes">Sim</option>
-                <option value="no">Não</option>
-
-            </select>
-
-            </select>
-            <label for="mensagem">Depoimento:</label>
-            <textarea name="mensagem" id="mensagem"></textarea>
-
-            <button type="submit">Enviar</button>
-
-        </form>
+                        <a href="reportar.jsp" id="enviar1">Repostar</a>
 
 
-    </div>
-</main>
-<script language="JavaScript" src="js/scriptR.js" ></script>
-
-</body>
-</html>
+                    
+                </form>
+            </aside>
+    
+            <article> <!--imagem do lado direito-->
+                <!--<img class="safeZ" src="./components/imagens/safezone2.png" alt="safeZone"> -->
+               <!-- <img class="safeZ" src="./components/imagens/mapa.png" alt="safeZone"> -->
+                <!--<img class="safeZ" src="./components/imagens/mapaP.png" alt="safeZone">-->
+                <img class="safeZ" src="img/mapaP2.png" alt="safeZone">
+            </article>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+    </html>

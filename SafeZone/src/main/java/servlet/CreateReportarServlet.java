@@ -24,7 +24,12 @@ public class CreateReportarServlet extends HttpServlet {
         String repMensagem = request.getParameter("rep-mensagem");
 
         ReportarDao reportarDao = new ReportarDao();
-        Reportar reportar = new Reportar(repId,repName,repEmail, repZona, repBairro, repAnonimo, repMensagem);
+        Reportar reportar = new Reportar(repId, repName,repEmail, repZona, repBairro, repAnonimo, repMensagem);
+
+        //new ReportarDao().createReportar(reportar);
+
+        //request.getRequestDispatcher("reportar.jsp").forward(request,response);
+
 
         if(repId.isBlank()){
             reportarDao.createReportar(reportar);
@@ -33,7 +38,8 @@ public class CreateReportarServlet extends HttpServlet {
         }
 
 
-        response.sendRedirect("/find-all-reportars");
+       response.sendRedirect("/find-all-reportars");
+
     }
 
 }
