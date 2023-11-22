@@ -23,8 +23,7 @@ body{
     width: 100%;
     overflow: hidden; /*vai esconder as pontos de cima do container*/
     text-align: center;
-    
-    
+
 }
 
 
@@ -95,3 +94,9 @@ form i{ /*olhor*/
     color: #ccc;
 }
 
+#voltar{
+top: 10px;
+background-color: white;
+    border: 2px solid blue;
+    text-align: left;
+}

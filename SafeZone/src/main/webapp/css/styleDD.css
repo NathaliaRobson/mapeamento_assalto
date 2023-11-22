@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+body{
+    background-color: rgb(34,34,34); /*cor de fundo*/
+    /*background-image: url(../components/imagens/fundo.jpg);*/
+}
+
+header{ /*cabeçalho da pagina*/
+    background-color: #ffff00;
+    display: flex;/*posicao do cabeçalho*/
+    flex-direction: row; /*vai deixa como uma linha*/
+    justify-content: space-between; /*vai separ as "div"*/
+    align-items: center;
+    padding: 10px;
+
+}
+
+.safe{
+    width: 130px;
+    height: 80px;
+    padding-left: 10px;
+}
+
+.mnuPrincipal ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.mnuPrincipal ul{ /*menu*/
+    background-color: #ffff00;
+    padding-right: 15px;
+    text-align: right;
+
+}
+
+.mnuPrincipal ul li{
+    display: inline-block;
+
+}
+
+.mnuPrincipal ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 18px;
+    font-size: 16px;
+    position: relative;
+    font-weight: bold;
+}
+
+
+.mnuPrincipal ul li a:hover {
+    color: white; /*fonte para muda de cor*/
+    border-radius: 10px;
+    /* border: 2px solid rgb(0, 84, 231); */
+    background-color: blue;
+    padding: 12px;
+
+  }
+
+a {
+    text-decoration: none;
+}
+
+main {
+    margin:8px;
+    text-align: center;
+    background-color: #ffff00;
+    padding:10px;
+    border-radius:10px;
+}
+
+form {
+    margin-top: 10px;
+
+}
+
+.n_tab{
+    color:white;
+    padding: 18px;
+    font-size: 16px;
+
+}
+
+.n_tab th{
+
+    padding: 8px;
+    border: 2px solid rgb(0, 84, 231);
+    background-color: rgb(34,34,34);
+}
+
+
+h1{
+    text-align: center;
+    font-size: 45px;
+
+    color: rgb(0, 84, 231);
+    padding: 10px;
+}
+
+.usr{ /* caixa de login*/
+    color: red;
+    padding: 15px;
+    font-size: 15px;
+    display: inline-block;
+
+    /*background-color: black;*/
+    border-radius: 15px;
+    border: 2px solid rgb(0, 84, 231);
+    text-decoration: none;
+
+}
+
+button{
+    background-color: red;
+    color:white;
+    border-radius: 18px;
+
+    font-size: 15px;
+    padding: 5px;
+
+
+}
+.upd{
+    background-color: green;
+    color:white;
+    border-radius: 18px;
+    border: 2px solid rgb(0, 84, 231);
+    font-size: 15px;
+    padding: 5px;
+
+}
+.btn{
+    display: flex;
+    margin: 2px;
+}

@@ -1,9 +1,9 @@
 const form = document.getElementById("form");
-const username = document.getElementById("username");
-const email = document.getElementById("email");
+const username = document.getElementById("cad_username");
+const email = document.getElementById("cad_email");
 
-const password = document.getElementById("password");
-const passwordConfirmation = document.getElementById("password-confirmation");
+const password = document.getElementById("cad_password");
+const passwordConfirmation = document.getElementById("cad_password-confirmation");
 
 form.addEventListener("submit", (event) =>{
     event.preventDefault();
@@ -44,7 +44,7 @@ function checkInputEmail(){
     const emailValue = email.value;
 
     if(emailValue === ""){
-        errorInput(email, "O email é obrigado.")
+        errorInput(email, "O email e obrigado.")
     } else{
         const formItem = email.parentElement;
         formItem.className = "form-content" /*para a mensagem que ja apareceu para sumir*/
@@ -56,7 +56,7 @@ function checkInputPassword(){
     const passwordValue = password.value;
 
     if(passwordValue === ""){
-        errorInput(password, "A senha é obrigatória.");
+        errorInput(password, "A senha e obrigatoria.");
 
     } else if(passwordValue.length < 8){
         errorInput(password, "A senha precisa ter no minimo 8 caracteres.");
@@ -71,9 +71,9 @@ function checkInputPasswordConfirmation(){
     const confirmationPasswordValue = passwordConfirmation.value;
 
     if(confirmationPasswordValue === ""){
-        errorInput(passwordConfirmation, "A confirmação de senha é obrigatoria.")
+        errorInput(passwordConfirmation, "A confirmacao de senha e obrigatoria.")
     } else if(confirmationPasswordValue !== passwordValue){
-        errorInput(passwordConfirmation, "As senhas não são iguais.")
+        errorInput(passwordConfirmation, "As senhas nao sao iguais.")
     } else{
         const formItem = passwordConfirmation.parentElement;
         formItem.className = "form-content"

@@ -16,18 +16,19 @@
 </head>
 <body>
     <div class="container">
+
         <nav class="logo">
-            <img class="safe" src="img/safezone2.png">
+            <a href="index.html"><img class="safe" src="img/safezone2.png"></a>
         </nav> 
 
-    
+
         <section class="header">
             <h2>Login</h2>
         </section>
 
         <form action="/login" method="post" id="form" class="form">
 
-                    <span>${requestScope.menssage}</span>
+                <span>${requestScope.menssage}</span>
 
                 <input type="text" placeholder="Nome de Usuario" id="login" name="username">
                 <input type="password" placeholder="Senha" id="senha" name="password"><i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
@@ -35,7 +36,7 @@
 
             <div>
                  <span class="text"> Nao tem uma conta?
-                     <a href="cadastro.html" class="">Inscreva-se agora</a>
+                     <a href="cadastro.jsp" class="">Inscreva-se agora</a>
                  </span>
             </div>
         </form>

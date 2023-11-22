@@ -10,9 +10,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/login")
-public class LoginServlet extends HttpServlet {
-
+@WebServlet("/sair")
+public class SairServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -24,9 +23,7 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         String username = req.getParameter("username");
-        //String email = req.getParameter("email");
         String password = req.getParameter("password");
-        //String passwordConf = req.getParameter("password-conf");
 
         User user = new User(username, password);
 
@@ -48,4 +45,5 @@ public class LoginServlet extends HttpServlet {
 
     }
 
-}
+    }
+

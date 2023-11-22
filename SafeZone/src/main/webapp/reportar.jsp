@@ -11,7 +11,7 @@
     <div class="container">
 
         <nav class="logo">
-            <img class="safe" src="/img/safezone2.png">
+            <a href="index.html"><img class="safe" src="img/safezone2.png"></a>
         </nav>
 
         <h1>Reportar</h1>
