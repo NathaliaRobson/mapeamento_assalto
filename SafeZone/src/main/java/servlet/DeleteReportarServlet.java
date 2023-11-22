@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet("/delete-car")
+@WebServlet("/delete-reportar")
 public class DeleteReportarServlet extends HttpServlet {
 
     @Override
@@ -18,7 +18,7 @@ public class DeleteReportarServlet extends HttpServlet {
 
         new ReportarDao().deleteReportarById(repId);
 
-        resp.sendRedirect("/find-all-cars");
+        resp.sendRedirect("/find-all-reportars");
 
     }
 

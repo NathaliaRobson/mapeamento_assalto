@@ -7,6 +7,12 @@
 </head>
 <body>
   <div>
+
+    <c:if test="${sessionScope.loggedUser != null}">
+            <span>${sessionScope.loggedUser}</span>
+            <a href="/logout">Logout</a>
+        </c:if>
+
     <h1>Reportar</h1>
     <table>
         <tr>
@@ -17,7 +23,11 @@
             <th>BAIRRO</th>
             <th>ANONIMO</th>
             <th>MENSAGEM</th>
-            <th>ACTIONS</th>
+
+            <c:if test="${sessionScope.loggedUser != null}">
+               <th>Actions</th>
+             </c:if>
+
         </tr>
              <c:forEach var="reportar" items="${reportars}">
                     <tr>
@@ -30,12 +40,14 @@
                         <td>${reportar.mensagem}</td>
 
                         <td>
-                            <form action="/delete-car" method="post">
-                               <input type="hidden" id="id" name="id" value="${car.id}">
+                            <c:if test="${sessionScope.loggedUser != null}">
+                            <form action="/delete-reportar" method="post">
+                               <input type="hidden" id="id" name="id" value="${reportar.id}">
                                <button type="submit">Delete</button>
                                <span>|</span>
                                <a href="reportar.jsp?id=${reportar.id}&name=${reportar.name}&email=${reportar.email}&zona=${reportar.zona}&bairro=${reportar.bairro}&anonimo=${reportar.anonimo}&mensagem=${reportar.mensagem}">Update</a>
                             </form>
+                          </c:if>
                         </td>
                     </tr>
              </c:forEach>

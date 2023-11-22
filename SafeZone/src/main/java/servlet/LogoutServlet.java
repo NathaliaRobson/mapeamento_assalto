@@ -1,26 +1,25 @@
 package servlet;
 
-import dao.ReportarDao;
-import model.Reportar;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
-@WebServlet({"/find-all-reportars", "/admin/find-all-reportars"})
-public class ListReportarServlet extends HttpServlet {
+
+@WebServlet("/logout")
+public class LogoutServlet extends HttpServlet {
+
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        List<Reportar> reportars = new ReportarDao().findAllReportars();
+        request.getSession().invalidate();
 
-        request.setAttribute("reportars", reportars);
+        request.setAttribute("message", "Success on logout");
 
-        request.getRequestDispatcher("dashboard.jsp").forward(request, response);
+        request.getRequestDispatcher("login.jsp").forward(request, response);
 
     }
+
 }
