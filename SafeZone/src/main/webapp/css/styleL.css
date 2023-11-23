@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: rgb(34,34,34); /*cor de fundo*/
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: #ffff00;
+     /*background: linear-gradient(120deg, #ffff00 0%, #a3a30e 100%);*/
+    border-radius: 14px;
+    margin: 14px;
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden; /*vai esconder as pontos de cima do container*/
+    text-align: center;
+
+}
+
+
+ .header, .form{
+    background-color: #ffff00;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.form{
+    padding: 0;
+    padding-bottom: 10px;
+    
+}
+
+h2{
+    
+    color: blue;
+    font-size: 40px;
+      
+}
+
+
+.safe{
+    padding-top: 30px;
+    width: 250px;
+    height: 200px;
+    align-items: center;
+}
+
+form{
+    position: relative;
+}
+
+form{ /*posição caixa de texto*/
+    width: 400px;
+    margin: 20px auto;
+    
+}
+h3{
+    color: blue;
+}
+
+input{ /*dentro da caixa de textos*/
+    display: block;
+    margin: 10px auto;
+    width: 400px;
+    height: 50px;
+    border: 2px solid blue;
+    border-radius: 30px;
+    outline: 0;
+    font-size: 20px;
+    text-align: center;
+    
+    
+}
+#senha, #login{
+   padding: 0px 50px 0px 10px; 
+}
+
+form i{ /*olhor*/
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 63px;
+    right: 10px;
+    color: #ccc;
+}
+
+#voltar{
+top: 10px;
+background-color: white;
+    border: 2px solid blue;
+    text-align: left;
+}
