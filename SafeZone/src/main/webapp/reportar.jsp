@@ -11,7 +11,7 @@
     <div class="container">
 
         <nav class="logo">
-            <img class="safe" src="/img/safezone2.png">
+            <a href="index.html"><img class="safe" src="img/safezone2.png"></a>
         </nav>
 
         <h1>Reportar</h1>
@@ -27,7 +27,7 @@
             <select name="rep-zona" id="rep-zona" value="${param.zona}" onchange="comboDinamica(this);">
 
                 <option value="zona0">Selecione um Zona</option>
-                <option value="Cental">Cental</option>
+                <option value="Central">Central</option>
                 <option value="Norte">Norte</option>
                 <option value="Sul">Sul</option>
                 <option value="Leste">Leste</option>
