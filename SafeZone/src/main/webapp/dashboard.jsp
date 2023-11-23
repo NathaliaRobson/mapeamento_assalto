@@ -32,14 +32,15 @@
           <thead>
            <tr class="n_tab">
                <th>ID</th>
-               <th>Name</th>
+
+               <c:if test="${sessionScope.loggedUser != null}">
+               <th>Nome</th>
+               </c:if>
+
                <th>EMAIL</th>
                <th>ZONA</th>
                <th>BAIRRO</th>
-
-               <c:if test="${sessionScope.loggedUser != null}">
                <th>ANONIMO</th>
-               </c:if>
 
                <th>MENSAGEM</th>
 
@@ -53,15 +54,15 @@
                 <c:forEach var="reportar" items="${reportars}">
                        <tr >
                            <td>${reportar.id}</td>
+
+                           <c:if test="${sessionScope.loggedUser != null}">
                            <td>${reportar.name}</td>
+                           </c:if>
+
                            <td>${reportar.email}</td>
                            <td>${reportar.zona}</td>
                            <td>${reportar.bairro}</td>
-
-                           <c:if test="${sessionScope.loggedUser != null}">
                            <td>${reportar.anonimo}</td>
-                           </c:if>
-
                            <td>${reportar.mensagem}</td>
 
                            <td class="btn">
