@@ -17,10 +17,9 @@
             <ul>
                 <li class="usr"><th> <c:if test="${sessionScope.loggedUser != null}">
                     <span>${sessionScope.loggedUser}</span>
-                    <a href="/logout">Logout</a></th></li>
+                    <a href="/logout">Sair</a></c:if></th></li>
 
-                <li class="usr2"><th><form action="" method="">
-                    <a href="index.html">Sair</a></c:if></th></li>
+
             </ul>
 
         </nav>
@@ -37,7 +36,11 @@
                <th>EMAIL</th>
                <th>ZONA</th>
                <th>BAIRRO</th>
+
+               <c:if test="${sessionScope.loggedUser != null}">
                <th>ANONIMO</th>
+               </c:if>
+
                <th>MENSAGEM</th>
 
                <c:if test="${sessionScope.loggedUser != null}">
@@ -54,7 +57,11 @@
                            <td>${reportar.email}</td>
                            <td>${reportar.zona}</td>
                            <td>${reportar.bairro}</td>
+
+                           <c:if test="${sessionScope.loggedUser != null}">
                            <td>${reportar.anonimo}</td>
+                           </c:if>
+
                            <td>${reportar.mensagem}</td>
 
                            <td class="btn">
