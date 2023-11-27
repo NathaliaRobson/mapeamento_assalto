@@ -23,6 +23,10 @@ public class CreateReportarServlet extends HttpServlet {
         String repAnonimo = request.getParameter("rep-anonimo");
         String repMensagem = request.getParameter("rep-mensagem");
 
+        if("yes".equals(repAnonimo)){
+            repName = "Anônimo";
+            }
+
         ReportarDao reportarDao = new ReportarDao();
         Reportar reportar = new Reportar(repId, repName,repEmail, repZona, repBairro, repAnonimo, repMensagem);
 
