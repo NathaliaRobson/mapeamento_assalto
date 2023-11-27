@@ -23,7 +23,7 @@ public class CreateReportarServlet extends HttpServlet {
         String repAnonimo = request.getParameter("rep-anonimo");
         String repMensagem = request.getParameter("rep-mensagem");
 
-        if("yes".equals(repAnonimo)){
+        if("yes".equals(repAnonimo)){ //nao vai mostra o nome do usuario
             repName = "Anônimo";
             }
 
