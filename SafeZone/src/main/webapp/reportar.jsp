@@ -16,10 +16,9 @@
 
         <h1>Reportar</h1>
         <form id="formulario1" action="/create-reportar" method="post">
-            <div id="campoAnonimo">
-                <label for="rep-name">Nome:</label>
-                <input type="text" id="rep-name" name="rep-name" value="${param.name}">
-            </div>
+
+            <label for="rep-name">Nome:</label>
+            <input type="text" id="rep-name" name="rep-name" value="${param.name}">
 
             <label for="rep-email">E-Mail:</label>
             <input type="email" id="rep-email" name="rep-email" value="${param.email}">
